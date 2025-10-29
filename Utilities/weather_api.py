@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-
+import os
 import requests
 
-API_KEY = "YOUR_API_KEY_HERE"
+API_KEY = os.getenv("OPENWEATHER_API_KEY")
 
 def get_weather(lat, lon):
     url = (
